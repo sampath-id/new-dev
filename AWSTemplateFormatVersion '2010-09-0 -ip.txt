@@ -1,0 +1,152 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Allow TCP 8443 from specific IPs
+Resources:
+  MySecurityGroup:
+    Type: 'AWS::EC2::SecurityGroup'
+    Properties:
+      GroupName: "SG for pingdom"
+      GroupDescription: Allow TCP 8443 from specific IPs
+      VpcId: vpc-03435597239f02fc4     # Provide VPC ID where we need to deploy SG
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 69.162.124.224/28
+          Description: Dallas - USA
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 63.143.42.240/28
+          Description: Dallas - USA
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 216.245.221.80/28
+          Description: Dallas - USA
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 208.115.199.16/28
+          Description: Dallas - USA
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 216.144.248.16/28
+          Description: Dallas - USA
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 2607:FF68:107::/48
+          Description: Dallas - USA  
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 104.131.107.63/32
+          Description: New York - USA
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 122.248.234.23/32
+          Description: Singapore
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 128.199.195.156/32
+          Description: Singapore-2
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 138.197.150.151/32
+          Description: Toronto-2 - Canada
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 139.59.173.249/32
+          Description: London-2 - UK	
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 146.185.143.14/32
+          Description: Amsterdam-2 - Netherlands
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 159.203.30.41/32
+          Description: Toronto - Canada  
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 159.89.8.111/32
+          Description: Frankfurt-2 - Germany
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 165.227.83.148/32
+          Description: New York-2 - USA
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 178.62.52.237/32
+          Description: London - UK
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 18.221.56.27/32
+          Description: Ohio - USA
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 167.99.209.234/32
+          Description: Amsterdam - Netherlands
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 216.144.250.150/32
+          Description: Dallas - USA
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 34.233.66.117/32
+          Description: Virginia - USA
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 46.101.250.135/32
+          Description: Frankfurt - Germany
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 46.137.190.132/32
+          Description: Dublin - Ireland
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 52.60.129.180/32
+          Description: Montreal - Canada
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 54.64.67.106/32
+          Description: Tokyo - Japan
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 54.67.10.127/32
+          Description: California - USA
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 54.79.28.129/32
+          Description: Sydney - Australia
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 54.94.142.218/32
+          Description: Sao Paulo - Brazil
+        - IpProtocol: tcp
+          FromPort: 8443
+          ToPort: 8443
+          CidrIp: 52.70.84.165/32
+          Description: Virginia - USA
+        - IpProtocol: tcp
+         
