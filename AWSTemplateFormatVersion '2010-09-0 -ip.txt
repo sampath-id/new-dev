@@ -6,7 +6,7 @@ Resources:
     Properties:
       GroupName: "SG for pingdom"
       GroupDescription: Allow TCP 8443 from specific IPs
-      VpcId: vpc-03435597239f02fc4     # Provide VPC ID where we need to deploy SG
+      VpcId: vpc-03435597239f02fc4     # Provide VPC ID where we need to deploy SG new learn.....
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: 8443
